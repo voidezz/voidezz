@@ -257,7 +257,6 @@ public class ModuleManager extends IterationRegister<Module>
         this.forceRegister(new AntiAim());
         this.forceRegister(new AntiPackets());
         this.forceRegister(new AntiPotion());
-        this.forceRegister(new AntiVanish());
         this.forceRegister(new AutoEat());
         this.forceRegister(new AutoFish());
         this.forceRegister(new AutoLog());
