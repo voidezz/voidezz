@@ -7,7 +7,9 @@
 voidezz / void client
 > the world's best utility mod skidded from earthhack™
 
-this is a private version of calypso made by the original dev
+this is a private version of calypso made by the original dev [xrayy#0001] and
+extended by shark#1213
+
 um ok yeah thats it
 
 <3
