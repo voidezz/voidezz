@@ -80,7 +80,7 @@ public class Chat extends Module
 
     public Chat()
     {
-        super("Chat", Category.Misc);
+        super("Chat", Category.Chat);
         register(new BooleanSetting("Clean", false));
         register(new BooleanSetting("Infinite", false));
         register(new ColorSetting("TimeStampsColor", Color.WHITE));
