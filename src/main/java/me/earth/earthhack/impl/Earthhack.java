@@ -21,7 +21,7 @@ import java.nio.ByteBuffer;
 public class Earthhack implements Globals {
     private static final Logger LOGGER = LogManager.getLogger("cathack");
     public static final String NAME = "Void";
-    public static final String VERSION = "v1.1-patch-302";
+    public static final String VERSION = "v1.2.1-patch-101";
 
     public static void preInit() {
         GlobalExecutor.EXECUTOR.submit(() -> Sphere.cacheSphere(LOGGER));
@@ -30,7 +30,7 @@ public class Earthhack implements Globals {
     public static void init() throws IOException {
 
         LOGGER.info("\n\nInitializing Void.");
-        SplashScreenHelper.setSplashScreen("void-patch-302", 7);
+        SplashScreenHelper.setSplashScreen("void", 7);
         Display.setTitle(NAME + " " + VERSION);
         Earthhack.setWindowIcon();
         Managers.load();
