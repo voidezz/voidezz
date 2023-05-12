@@ -34,7 +34,7 @@ public class XRay extends BlockAddingModule
 
     public XRay()
     {
-        super("XRay",
+        super("xrayy",
               Category.Render,
               s -> "Black/Whitelist " + s.getName() + " from being displayed.");
         this.listeners.add(new ListenerBlockLayer(this));
