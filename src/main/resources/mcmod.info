@@ -1,14 +1,14 @@
 [
 {
-  "modid": "calypso",
-  "name": "Calypso",
-  "description": "A 1.12.2 Anarchy Client.",
-  "version": "1.6-beta",
+  "modid": "void",
+  "name": "void",
+  "description": "the best utility mod earthhack skid",
+  "version": "v1.2.1-patch-101",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
   "authorList": ["3arthqu4ke","Ohare","Sharkyy"],
-  "credits": "Phobos + Vanity",
+  "credits": "3arthh4ck + Calypso",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
