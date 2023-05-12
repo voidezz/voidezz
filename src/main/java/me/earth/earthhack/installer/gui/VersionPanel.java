@@ -12,7 +12,7 @@ public class VersionPanel extends JPanel
 {
     public VersionPanel(Installer handler, List<Version> versions)
     {
-        String[] columns = { "Name", "Forge?", "RepClient?", "Valid?" };
+        String[] columns = { "Name", "Forge?", "VoidInstalled?", "ValidInstallation?" };
         List<Object[]> data = new ArrayList<>(versions.size());
         for (Version version : versions)
         {
