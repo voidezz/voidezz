@@ -15,7 +15,7 @@ public class InstallerFrame
     public InstallerFrame()
     {
         FlatLightLaf.setup(new FlatDarculaLaf());
-        frame = new JFrame("Rep EzInstaller");
+        frame = new JFrame("void :checkmark:");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel panel = new JPanel();
