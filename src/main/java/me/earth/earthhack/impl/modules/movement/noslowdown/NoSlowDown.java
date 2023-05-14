@@ -7,6 +7,7 @@ import me.earth.earthhack.api.setting.settings.BooleanSetting;
 import me.earth.earthhack.api.setting.settings.NumberSetting;
 import me.earth.earthhack.impl.core.mixins.block.MixinBlockSlime;
 import me.earth.earthhack.impl.core.mixins.block.MixinBlockSoulSand;
+import me.earth.earthhack.impl.core.mixins.block.EarthMixinBlockSlime;
 import me.earth.earthhack.impl.gui.click.Click;
 import me.earth.earthhack.impl.managers.Managers;
 import me.earth.earthhack.impl.util.minecraft.KeyBoardUtil;
@@ -21,6 +22,7 @@ import java.util.List;
 /**
  * {@link MixinBlockSoulSand} for SoulSand.
  * {@link MixinBlockSlime} for Slime.
+ * {@link EarthMixinBlockSlime for the default 3arthqu4ke SlimeMixin}
  */
 public class NoSlowDown extends Module
 {
@@ -65,6 +67,7 @@ public class NoSlowDown extends Module
         super("NoSlowDown", Category.Movement);
         register(new BooleanSetting("SoulSand", true));
         register(new BooleanSetting("Slime", false));
+        register(new BooleanSetting("EarthSlime", false));
 
         keys = new KeyBinding[]
                 {

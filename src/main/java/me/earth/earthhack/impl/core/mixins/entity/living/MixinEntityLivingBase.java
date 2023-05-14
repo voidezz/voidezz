@@ -41,6 +41,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.injection.At;
@@ -382,6 +383,15 @@ public abstract class MixinEntityLivingBase extends MixinEntity
         method = "handleJumpLava",
         at = @At("HEAD"),
         cancellable = true)
+
+    @ModifyVariable(method = "updateItemUse", at = @At("HEAD"), ordinal = 0, argsOnly = true)
+    public int updateItemUse(int eatingParticlesAmount) {
+        if (NO_RENDER.isEnabled() && NO_RENDER.get().noEatingParticles())
+            return 0;
+        else return eatingParticlesAmount;
+    }
+
+
     public void handleJumpLavaHook(CallbackInfo info)
     {
         LiquidJumpEvent event =

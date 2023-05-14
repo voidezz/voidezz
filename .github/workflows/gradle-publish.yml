@@ -31,5 +31,5 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: void [v1.2.1]
+          name: void [v1.3+earth]
           path: ./build/libs/*release.jar  

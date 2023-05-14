@@ -21,7 +21,7 @@ import java.nio.ByteBuffer;
 public class Earthhack implements Globals {
     private static final Logger LOGGER = LogManager.getLogger("cathack");
     public static final String NAME = "Void";
-    public static final String VERSION = "v1.2.1-patch-101";
+    public static final String VERSION = "v1.3+earth";
 
     public static void preInit() {
         GlobalExecutor.EXECUTOR.submit(() -> Sphere.cacheSphere(LOGGER));

@@ -42,7 +42,7 @@ apply plugin: 'maven'
 
 mainClassName = 'me.earth.earthhack.installer.main.Main'
 group project.modGroup //http://maven.apache.org/guides/mini/guide-naming-conventions.html
-project.version = 'v1.2.1-patch-101'
+project.version = 'v1.3+earth'
 
 boolean VANILLA = false
 //noinspection GroovyUnusedAssignment
