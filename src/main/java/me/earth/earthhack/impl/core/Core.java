@@ -79,27 +79,6 @@ public class Core implements TweakerCore
                                                 .getConfigs()
                                                 .values())
         {
-            if (config.getTweakerClass() != null) {
-                LOGGER.info("Adding "
-                        + config.getName()
-                        + "'s CustomTweaker: "
-                        + config.getMixinConfig());
-                try {
-                    Class<?> clazz = Class.forName(config.getTweakerClass());
-                    Constructor<?> constructor = clazz.getConstructor();
-                    constructor.setAccessible(true);
-                    TweakerCore tweakerCore = (TweakerCore) constructor.newInstance();
-                    tweakerCore.init(pluginClassLoader);
-                    for (String transformer : tweakerCore.getTransformers()) {
-                        if (pluginClassLoader instanceof LaunchClassLoader) {
-                            ((LaunchClassLoader) pluginClassLoader).registerTransformer(transformer);
-                        }
-                    }
-                } catch (Throwable ex) {
-                    ex.printStackTrace();
-                }
-            }
-
             if (config.getMixinConfig() != null)
             {
                 LOGGER.info("Adding "
